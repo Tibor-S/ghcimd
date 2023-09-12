@@ -6,7 +6,7 @@ Loads markdown code blocks into ghci
 import Test.QuickCheck
 
 test n
- | n < 0 = [n]
+ | n < 0 = []
  | otherwise = n : test (n-1)
 ```
 Mark a code block as haskell like this:
